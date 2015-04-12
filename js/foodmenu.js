@@ -5,10 +5,12 @@ $(document).ready( function() {
 
 // FULL PAGE SCROLL
 	$('#fullpage').fullpage({
-		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 		menu: '#subMenu',
-		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
-		autoScrolling: false
+		sectionsColor: ['whitesmoke', 'whitesmoke', 'whitesmoke', 'whitesmoke'],
+		autoScrolling: false,
+		fitToSection: true,
+		easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
 	});
 
 //STICK UP

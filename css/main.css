@@ -136,51 +136,6 @@ img {
     color: #ffbdbf;
 }
 
-/*Submenu*/
-
-#subMenu li {
-    display:inline-block;
-    margin: 10px;
-    color: #000;
-    background:#fff;
-    background: rgba(255,255,255, 0.5);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-#subMenu li.active{
-    background:#666;
-    background: rgba(0,0,0, 0.5);
-    color: #fff;
-}
-#subMenu li a{
-    text-decoration:none;
-    color: #000;
-}
-#subMenu li.active a:hover{
-    color: #000;
-}
-#subMenu li:hover{
-    background: rgba(255,255,255, 0.8);
-}
-#subMenu li a,
-#subMenu li.active a{
-    padding: 9px 18px;
-    display:block;
-}
-#subMenu li.active a{
-    color: #fff;
-}
-#subMenu{
-    position: relative;
-    left:0;
-    height: 40px;
-    z-index: 65;
-    width: 100%;
-    padding: 0;
-    margin:0;
-    text-align: center;
-}
-
 /* Page */
 
 #main {
@@ -188,6 +143,160 @@ img {
     margin: 0 auto;
     padding: 30px 0;
 }
+
+/*Submenu*/
+
+#subMenu li {
+    margin: 10px;
+    list-style: none;
+    width: 80px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#subMenu li a {
+    text-decoration: none;
+    color: #253948;
+    display: inline-block;
+    outline: none;
+}
+
+#subMenu li a span {
+
+}
+
+#subMenu li.active a:hover{
+}
+
+#subMenu li a:hover{
+    /*background: rgba(255,255,255, 0.8);*/
+        color: #d4363b;
+}
+
+#subMenu li a,
+#subMenu li.active a {
+    padding: 9px 18px;
+    display: block;
+}
+
+#subMenu li.active a {
+    color: #d4363b;
+}
+
+#subMenu {
+    z-index: 65;
+    background: #ffffff;
+    box-shadow: -1px 1px 0px rgba(0,0,0,.2);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/*Colors*/
+
+.darkred {
+    background-color: #ab2d31;
+}
+
+.red ul li {
+    background-color: #d4363b;
+}
+
+.darkblue ul li {
+    background-color: #253948;
+}
+
+.blue ul li {
+    background-color: #9dcdf1;
+}
+
+.green ul li {
+    background-color: #82ac39;
+}
+
+.redtint ul li {
+    background-color: #ffbdbf;
+}
+
+.greentint ul li{
+    background-color: #b7d49d;
+}
+
+/* Icons */
+.breakfast a,
+.sandwiches a,
+.hotdogs a,
+.dessert a {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/icons.png) ;
+    background-repeat: no-repeat;
+}
+
+.breakfast a {
+    background-position: 0px 0px;
+}
+
+.breakfast a:hover,
+#subMenu li.breakfast.active a {
+    background-position: -100px 0px;
+}
+
+.sandwiches a {
+    background-position: 0px -100px;
+}
+
+.sandwiches a:hover,
+#subMenu li.sandwiches.active a {
+    background-position: -100px -100px;
+}
+
+.hotdogs a {
+    background-position: 0px -200px;
+}
+
+.hotdogs a:hover,
+#subMenu li.hotdogs.active a {
+    background-position: -100px -200px;
+}
+
+.dessert a {
+    background-position: 0px -300px;
+}
+
+.dessert a:hover,
+#subMenu li.dessert.active a {
+    background-position: -100px -300px;
+}
+
+.section ul {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: block;
+    text-align: center;
+}
+
+.section ul li {
+    padding: 0;
+    margin: 5px;
+    height: 200px;
+    list-style: none;
+    display: block;
+}
+
+.section h2 {
+    border-bottom: 2px solid #82ac39;
+    margin: 10px 0 0;
+}
+
+.section .inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 
 @media (min-width: 500px) {
     #header img {
@@ -201,5 +310,11 @@ img {
 
     #menu li {
         display: inline-block;
+    }
+
+    .section ul li {
+        width: 23%;
+        float: left;
+        margin: 1%;
     }
 }
