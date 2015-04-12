@@ -74,6 +74,8 @@ img {
     padding: 8px 0 0;
     background: url(../img/tablecloth_red.png) repeat;
     border-bottom: 8px solid #d4363b;
+    position: relative;
+    z-index: 70;
 }
 
 #header img {
@@ -94,7 +96,6 @@ img {
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    display: inline-block;
     text-align: center;
     list-style: none;
     line-height: normal;
@@ -118,7 +119,6 @@ img {
     text-shadow: -1px 1px 0px rgba(0,0,0,.2);
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #ffbdbf;
     border: none;
     -o-transition: .2s;
     -ms-transition: .2s;
@@ -134,6 +134,51 @@ img {
 
 #menu a:active {
     color: #ffbdbf;
+}
+
+/*Submenu*/
+
+#subMenu li {
+    display:inline-block;
+    margin: 10px;
+    color: #000;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#subMenu li.active{
+    background:#666;
+    background: rgba(0,0,0, 0.5);
+    color: #fff;
+}
+#subMenu li a{
+    text-decoration:none;
+    color: #000;
+}
+#subMenu li.active a:hover{
+    color: #000;
+}
+#subMenu li:hover{
+    background: rgba(255,255,255, 0.8);
+}
+#subMenu li a,
+#subMenu li.active a{
+    padding: 9px 18px;
+    display:block;
+}
+#subMenu li.active a{
+    color: #fff;
+}
+#subMenu{
+    position:relative;
+    left:0;
+    height: 40px;
+    z-index: 65;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    text-align: center;
 }
 
 /* Page */

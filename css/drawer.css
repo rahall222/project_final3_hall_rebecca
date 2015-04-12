@@ -109,7 +109,7 @@ body.drawer-navbar.drawer-fixed {
 
 .drawer-overlay-upper {
     position: fixed;
-    z-index: 5200;
+    z-index: 60;
     height: 100%;
     width: 100%;
     left: 0;

@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shirley's Sandwiches | Final</title>
-	<meta name="description" content="Website for Shirley's Sandwiches Restaurant">
+	<title>Shirley's Sandwiches | Food & Beverages</title>
+	<meta name="description" content="Food menu for Shirley's Sandwiches Restaurant">
 	<link href='http://fonts.googleapis.com/css?family=Ruda:900,700|Coustard' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/vendor/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/drawer.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="drawer drawer-right drawer-navbar">
@@ -24,7 +25,7 @@
 			<nav id="menu" class="drawer-nav" role="navigation">
 				<ul class="drawer-menu">
 					<li class="drawer-menu-item"><a href="index.html">Home</a></li>
-					<li class="drawer-menu-item"><a href="foodmenu.html">Food & Drink</a></li>
+					<li class="drawer-menu-item"><a href="#">Food & Drink</a></li>
 					<li class="drawer-menu-item"><a href="#">Promotions</a></li>
 					<li class="drawer-menu-item"><a href="#">Find Us</a></li>
 				</ul>
@@ -33,17 +34,23 @@
 		</div>
 	</header>
 	<ul id="subMenu">
-		<li><a href="#">Twitter</a></li>
-		<li><a href="#">Facebook</a></li>
-		<li><a href="#">YouTube</a></li>
-		<li><a href="#">Instagram</a></li>
+		<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Appetizers</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">Entrees</a></li>
+		<li data-menuanchor="thirdPage"><a href="#thirdPage">Desserts</a></li>
+		<li data-menuanchor="fourthPage"><a href="#fourthPage">Beverages</a></li>
 	</ul>
-
+	<div id="fullpage">
+		<div class="section" data-anchor="firstPage">Appetizers</div>
+		<div class="section" data-anchor="secondPage">Entrees</div>
+		<div class="section" data-anchor="thirdPage">Desserts</div>
+		<div class="section" data-anchor="fourthPage">Beverages</div>
+	</div>
 
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
 	<script src="http://cdn.rawgit.com/ungki/bootstrap.dropdown/3.3.1/dropdown.min.js"></script>
 	<script src="js/jquery.drawer.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
