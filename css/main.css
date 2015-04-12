@@ -144,6 +144,71 @@ img {
     padding: 30px 0;
 }
 
+/* text content */
+
+#content {
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* Icons */
+
+#content ul {
+    margin: 0 auto;
+    padding: 10px 0 20px;
+    width: 200px;
+}
+
+#content li {
+    float: left;
+    list-style-type: none;
+}
+
+/* Adverts */
+
+#adverts {
+    margin: 0 auto 20px;
+    padding: 5%;
+}
+
+/* Textures */
+
+.textures img {
+    width: 100%;
+}
+
+.textures ul {
+    margin: 0;
+    padding: 0;
+}
+
+.textures li {
+    float: left;
+    list-style-type: none;
+    margin: 1%;
+    padding-bottom: 40%;
+    width: 38%;
+}
+
+.textures .redtable {
+    background: url(../img/tablecloth_red.png) repeat;
+    width: 58%;
+    border-top: 10px solid rgba(255, 189, 191, .5);
+    border-bottom: 10px solid rgba(255, 189, 191, .5);
+}
+
+.textures .greentable {
+    background: url(../img/tablecloth_green.png) repeat;
+    border-top: 10px solid rgba(183, 212, 157, .6);
+    border-bottom: 10px solid rgba(183, 212, 157, .6);
+}
+
+.textures .woodtable {
+    background: url(../img/tablecloth_green.png) repeat;
+    width: 98%;
+    padding-bottom: 0;
+}
+
 /*Submenu*/
 
 #subMenu li {
@@ -317,4 +382,31 @@ img {
         float: left;
         margin: 1%;
     }
+}
+
+@media (min-width: 750px) {
+    #content {
+        width: 400px;
+        position: absolute;
+        top: 321px;
+        padding-left: 35px;
+    }
+
+    #content ul {
+        padding: 8px 0 10px;
+        width: 200px;
+    }
+
+    #adverts {
+        float: left;
+        padding: 0 5% 5% 370px;
+    }
+}
+
+@media (min-width: 940px) {
+    .textures {
+        float: left;
+        width: 100%;
+    }
+
 }
