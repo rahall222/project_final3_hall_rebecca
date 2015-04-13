@@ -321,7 +321,8 @@ img {
 .breakfast a,
 .sandwiches a,
 .hotdogs a,
-.dessert a {
+.dessert a,
+.drinks a {
     width: 80px;
     height: 80px;
     background-image: url(../img/icons.png) ;
@@ -364,7 +365,16 @@ img {
     background-position: -100px -300px;
 }
 
-.section ul {
+.drinks a {
+    background-position: 0px -400px;
+}
+
+.drinks a:hover,
+#subMenu li.drinks.active a {
+    background-position: -100px -400px;
+}
+
+.foodmenu ul {
     padding: 0;
     margin: 0 auto;
     max-width: 1600px;
@@ -372,20 +382,25 @@ img {
     text-align: center;
 }
 
-.section ul li {
+.foodmenu li {
     padding: 0;
     margin: 5px;
-    height: 200px;
+    height: 270px;
     list-style: none;
     display: block;
+    overflow: hidden;
 }
 
-.section h2 {
+.foodmenu li img {
+    width: 100%;
+}
+
+.foodmenu h2 {
     border-bottom: 2px solid #82ac39;
     margin: 10px 0 0;
 }
 
-.section .inner {
+.foodmenu .inner {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -416,10 +431,10 @@ img {
         display: inline-block;
     }
 
-    .section ul li {
-        width: 23%;
+    .foodmenu ul li {
+        width: 33%;
         float: left;
-        margin: 1%;
+        margin: .2% .1%;
     }
 
     #content.contact {
