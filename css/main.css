@@ -205,6 +205,10 @@ li.social ul li,
     padding: 5%;
 }
 
+#adverts figure {
+    height: 270px;
+}
+
 /* TEXTURES */
 
 .textures img {
@@ -220,8 +224,14 @@ li.social ul li,
     float: left;
     list-style-type: none;
     margin: 1%;
-    padding-bottom: 40%;
+    /*padding-bottom: 40%;*/
     width: 38%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.textures p {
+    padding: 10px 20px;
 }
 
 .redtable {
@@ -247,6 +257,7 @@ li.social ul li,
 .textures .woodtable {
     width: 98%;
     padding-bottom: 0;
+    height: auto;
 }
 
 /*Submenu*/
@@ -305,6 +316,10 @@ li.social ul li,
     background: rgba(255,255,255, 0.5);
 }
 
+.sheer {
+    background: rgba(255,255,255, 0.5);
+}
+
 .darkred > li {
     background-color: #ab2d31;
 }
@@ -322,6 +337,10 @@ li.social ul li,
 }
 
 .green > li {
+    background-color: #82ac39;
+}
+
+.green {
     background-color: #82ac39;
 }
 
