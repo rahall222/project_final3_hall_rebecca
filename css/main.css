@@ -263,7 +263,7 @@ li.social ul li,
 /*Submenu*/
 
 #subMenu li {
-    margin: 10px;
+    padding: 6px 10px 3px;
     list-style: none;
     display: inline-block;
 }
@@ -305,6 +305,10 @@ li.social ul li,
     padding: 0;
     margin: 0;
     text-align: center;
+}
+
+#subMenu.foodbar {
+    text-align: left;
 }
 
 /*Colors*/
@@ -403,9 +407,9 @@ li.social ul li,
 .hotdogs a,
 .dessert a,
 .drinks a {
-    width: 80px;
-    height: 80px;
-    background-image: url(../img/icons.png) ;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons_small.png) ;
     background-repeat: no-repeat;
 }
 
@@ -415,43 +419,43 @@ li.social ul li,
 
 .breakfast a:hover,
 #subMenu li.breakfast.active a {
-    background-position: -100px 0px;
+    background-position: -50px 0px;
 }
 
 .sandwiches a {
-    background-position: 0px -100px;
+    background-position: 0px -50px;
 }
 
 .sandwiches a:hover,
 #subMenu li.sandwiches.active a {
-    background-position: -100px -100px;
+    background-position: -50px -50px;
 }
 
 .hotdogs a {
-    background-position: 0px -200px;
+    background-position: 0px -100px;
 }
 
 .hotdogs a:hover,
 #subMenu li.hotdogs.active a {
-    background-position: -100px -200px;
+    background-position: -50px -100px;
 }
 
 .dessert a {
-    background-position: 0px -300px;
+    background-position: 0px -150px;
 }
 
 .dessert a:hover,
 #subMenu li.dessert.active a {
-    background-position: -100px -300px;
+    background-position: -50px -150px;
 }
 
 .drinks a {
-    background-position: 0px -400px;
+    background-position: 0px -200px;
 }
 
 .drinks a:hover,
 #subMenu li.drinks.active a {
-    background-position: -100px -400px;
+    background-position: -50px -200px;
 }
 
 .fooditems {
@@ -541,6 +545,69 @@ li.social ul li,
 
     #menu li {
         display: inline-block;
+    }
+
+    #subMenu.foodbar {
+        text-align: center;
+    }
+
+    #subMenu li {
+        padding: 10px;
+    }
+
+    .breakfast a,
+    .sandwiches a,
+    .hotdogs a,
+    .dessert a,
+    .drinks a {
+        width: 80px;
+        height: 80px;
+        background-image: url(../img/icons.png) ;
+    }
+
+    .breakfast a {
+        background-position: 0px 0px;
+    }
+
+    .breakfast a:hover,
+    #subMenu li.breakfast.active a {
+        background-position: -100px 0px;
+    }
+
+    .sandwiches a {
+        background-position: 0px -100px;
+    }
+
+    .sandwiches a:hover,
+    #subMenu li.sandwiches.active a {
+        background-position: -100px -100px;
+    }
+
+    .hotdogs a {
+        background-position: 0px -200px;
+    }
+
+    .hotdogs a:hover,
+    #subMenu li.hotdogs.active a {
+        background-position: -100px -200px;
+    }
+
+    .dessert a {
+        background-position: 0px -300px;
+    }
+
+    .dessert a:hover,
+    #subMenu li.dessert.active a {
+        background-position: -100px -300px;
+    }
+
+    .drinks a {
+        background-position: 0px -400px;
+    }
+
+    .drinks a:hover,
+    #subMenu li.drinks.active a {
+        background-position: -100px -400px;
     }
 
     ul.fooditems > li {
