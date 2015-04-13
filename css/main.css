@@ -37,8 +37,11 @@ h2 {
 
 p, ul, ol {
     margin-top: 0;
-    line-height: 180%;
     letter-spacing: .5px;
+}
+
+ol, ul {
+    padding: 0;
 }
 
 a {
@@ -161,7 +164,7 @@ img {
 }
 
 #content ul {
-    margin: 0;
+    margin: 0 auto;
     padding: 10px 0 0;
     text-align: center;
 }
@@ -171,20 +174,29 @@ img {
 }
 
 #content > ul > li {
-    padding: 30px;
+    padding: 0 0 20px;
     /*background: #fff;*/
 
 }
 
-#content li.hours ul li {
-    border-bottom: 1px solid #fff;
+.list li,
+li.list ul li {
+    border-bottom: 1px solid #dbdbdb;
     text-align: left;
 }
 
-#content li.social ul li {
-    display: inline-block;
-    width: 30%;
+li.social ul,
+ul.social {
+    margin: 20px 0;
+    border-bottom: 1px solid #dbdbdb;
 }
+
+li.social ul li,
+.social li {
+    display: inline-block;
+    outline: none;
+}
+
 
 /* ADVERTS */
 
@@ -242,9 +254,6 @@ img {
 #subMenu li {
     margin: 10px;
     list-style: none;
-    width: 80px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
     display: inline-block;
 }
 
@@ -288,34 +297,86 @@ img {
 }
 
 /*Colors*/
+.white > li {
+    background-color: #ffffff;
+}
 
-.darkred {
+.sheer > li {
+    background: rgba(255,255,255, 0.5);
+}
+
+.darkred > li {
     background-color: #ab2d31;
 }
 
-.red ul li {
+.red > li {
     background-color: #d4363b;
 }
 
-.darkblue ul li {
+.darkblue > li {
     background-color: #253948;
 }
 
-.blue ul li {
+.blue > li {
     background-color: #9dcdf1;
 }
 
-.green ul li {
+.green > li {
     background-color: #82ac39;
 }
 
-.redtint ul li {
+.redtint > li {
     background-color: #ffbdbf;
 }
 
-.greentint ul li{
+.greentint > li{
     background-color: #b7d49d;
 }
+
+/*social media*/
+.facebook a,
+.twitter a,
+.youtube a,
+.email a {
+    background-image: url(../img/social_sprite.png) ;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    display: block;
+}
+
+.facebook a {
+    background-position: 0px 0px;
+}
+
+.facebook a:hover {
+    background-position: -49px 0px;
+}
+
+.twitter a {
+    background-position: 0px -49px;
+}
+
+.twitter a:hover {
+    background-position: -49px -49px;
+}
+
+.youtube a {
+    background-position: 0px -98px;
+}
+
+.youtube a:hover {
+    background-position: -49px -98px;
+}
+
+.email a {
+    background-position: 0px -147px;
+}
+
+.email a:hover {
+    background-position: -49px -147px;
+}
+
 
 /* Icons */
 .breakfast a,
@@ -374,26 +435,54 @@ img {
     background-position: -100px -400px;
 }
 
-.foodmenu ul {
+.fooditems {
     padding: 0;
-    margin: 0 auto;
-    max-width: 1600px;
     display: block;
-    text-align: center;
 }
 
-.foodmenu li {
+.fooditems > li {
     padding: 0;
-    margin: 5px;
-    height: 270px;
+    margin: 5px 5px 20px;
     list-style: none;
     display: block;
-    overflow: hidden;
 }
 
-.foodmenu li img {
-    width: 100%;
+.fooditems figure {
+    height: 270px;
 }
+
+.foodinfo {
+    padding: 5px;
+    display: block;
+}
+
+.foodinfo li {
+    font-size: .89em;
+    padding: 2px 5px;
+    list-style: none;
+    display: block;
+}
+
+.foodinfo li:first-child {
+    font-size: 1em;
+    color: #ab2d31;
+    padding: 0 7px;
+}
+
+.foodinfo li:nth-child(2n+3) {
+    background-color: #eee;
+}
+
+.foodinfo li span {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    color: #ab2d31;
+    background-color: #ffbdbf;
+    border-radius: 10px;
+}
+
 
 .foodmenu h2 {
     border-bottom: 2px solid #82ac39;
@@ -403,6 +492,10 @@ img {
 .foodmenu .inner {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+#content.contact h2 {
+    font-size: 1.3em;
 }
 
 #map {
@@ -431,10 +524,11 @@ img {
         display: inline-block;
     }
 
-    .foodmenu ul li {
-        width: 33%;
+    ul.fooditems > li {
+        width: calc(100%/3);
         float: left;
-        margin: .2% .1%;
+        padding: 0;
+        margin: 5px 0;
     }
 
     #content.contact {
