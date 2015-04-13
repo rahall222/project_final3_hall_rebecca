@@ -27,6 +27,7 @@ h1, h2 {
 h1 {
     font-size: 3em;
     font-weight: 900;
+    text-align: center;
 }
 
 h2 {
@@ -151,27 +152,48 @@ img {
     padding: 0 5%;
 }
 
-/* Icons */
+#content h1{
+    text-align: left;
+}
+
+#content h2{
+    color: #82ac39;
+}
 
 #content ul {
-    margin: 0 auto;
-    padding: 10px 0 20px;
-    width: 200px;
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: center;
 }
 
 #content li {
-    float: left;
     list-style-type: none;
 }
 
-/* Adverts */
+#content > ul > li {
+    padding: 30px;
+    /*background: #fff;*/
+
+}
+
+#content li.hours ul li {
+    border-bottom: 1px solid #fff;
+    text-align: left;
+}
+
+#content li.social ul li {
+    display: inline-block;
+    width: 30%;
+}
+
+/* ADVERTS */
 
 #adverts {
     margin: 0 auto 20px;
     padding: 5%;
 }
 
-/* Textures */
+/* TEXTURES */
 
 .textures img {
     width: 100%;
@@ -190,21 +212,27 @@ img {
     width: 38%;
 }
 
-.textures .redtable {
+.redtable {
     background: url(../img/tablecloth_red.png) repeat;
-    width: 58%;
     border-top: 10px solid rgba(255, 189, 191, .5);
     border-bottom: 10px solid rgba(255, 189, 191, .5);
 }
 
-.textures .greentable {
+.greentable {
     background: url(../img/tablecloth_green.png) repeat;
     border-top: 10px solid rgba(183, 212, 157, .6);
     border-bottom: 10px solid rgba(183, 212, 157, .6);
 }
 
+.woodtable {
+    background: url(../img/wood.jpg) repeat;
+}
+
+.textures .redtable {
+    width: 58%;
+}
+
 .textures .woodtable {
-    background: url(../img/tablecloth_green.png) repeat;
     width: 98%;
     padding-bottom: 0;
 }
@@ -362,6 +390,17 @@ img {
     margin: 0 auto;
 }
 
+#map {
+    margin: 0 auto 20px;
+    padding: 5%;
+}
+
+#map-canvas {
+        width: 500px;
+        height: 400px;
+        background-color: #CCC;
+      }
+
 
 @media (min-width: 500px) {
     #header img {
@@ -381,6 +420,29 @@ img {
         width: 23%;
         float: left;
         margin: 1%;
+    }
+
+    #content.contact {
+        width: 300px;
+        position: absolute;
+        top: 321px;
+        padding-left: 35px;
+        background: rgba(255,255,255, 0.5);
+        /*background: #fff;*/
+    }
+
+    #content.contact ul {
+        padding: 8px 0 10px;
+        width: 200px;
+    }
+
+    #map {
+        float: left;
+        padding: 0 5% 5% 340px;
+    }
+
+    #map {
+        width: 100%;
     }
 }
 

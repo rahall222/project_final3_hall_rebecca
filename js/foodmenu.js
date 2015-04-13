@@ -9,8 +9,7 @@ $(document).ready( function() {
 		menu: '#subMenu',
 		sectionsColor: ['whitesmoke', 'whitesmoke', 'whitesmoke', 'whitesmoke'],
 		autoScrolling: false,
-		fitToSection: true,
-		easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+		fitToSection: true
 	});
 
 //STICK UP
