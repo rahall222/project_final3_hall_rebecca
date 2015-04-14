@@ -484,6 +484,7 @@ li.social ul li,
     padding: 2px 5px;
     list-style: none;
     display: block;
+    position: relative;
 }
 
 .foodinfo li:first-child {
@@ -497,13 +498,23 @@ li.social ul li,
 }
 
 .foodinfo li span {
-    display: inline-block;
     text-align: center;
-    width: 100px;
-    padding: 5px;
+    display: inline-block;
+    width: 25%;
     color: #ab2d31;
     background-color: #ffbdbf;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    position: absolute;
+    right: 0px;
+}
+
+.foodinfo li span::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -15px;
+    border-top: 18px solid #ffbdbf;
+    border-left: 15px solid transparent;
 }
 
 
