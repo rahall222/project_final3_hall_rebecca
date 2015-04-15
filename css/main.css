@@ -38,6 +38,7 @@ h2 {
 p, ul, ol {
     margin-top: 0;
     letter-spacing: .5px;
+    line-height: 180%;
 }
 
 ol, ul {
@@ -512,7 +513,7 @@ li.social ul li,
     display: inline-block;
     position: absolute;
     left: -15px;
-    border-top: 18px solid #ffbdbf;
+    border-top: 25px solid #ffbdbf;
     border-left: 15px solid transparent;
 }
 
@@ -523,7 +524,6 @@ li.social ul li,
 
 .spacer {
     height: 150px;
-    background: pink;
 }
 
 .foodmenu .inner {
@@ -546,6 +546,101 @@ li.social ul li,
     background-color: #CCC;
   }
 
+/* Buttons */
+#buttons {
+    background: #253948;
+    padding: 50px;
+}
+
+#buttons ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 200px;
+}
+
+#buttons ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 0 4%;
+}
+
+/*.submit_red,
+.submit_green {
+    width: 100%;
+}*/
+
+#buttons li a {
+    display: block;
+    line-height: 45px;
+    height: 61px;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+#buttons li a:hover {
+    text-decoration: none;
+}
+
+.btn_red a,
+.btn_green a {
+    background: #ffffff;
+    border-width: 8px;
+    border-style: solid;
+}
+
+.btn_red a {
+    color: #d4363b;
+    border-top-color: #ffbdbf;
+    border-right-color: #ffbdbf;
+    border-bottom-color: #ab2d31;
+    border-left-color: #ab2d31;
+}
+
+.btn_red a:hover {
+    border-bottom-color: #d4363b;
+    border-left-color: #d4363b;
+}
+
+.btn_red a:active {
+    border-bottom-color: #ab2d31;
+    border-left-color: #ab2d31;
+}
+
+.btn_green a {
+    color: #82ac39;
+    border-top-color: #b7d49d;
+    border-right-color: #b7d49d;
+    border-bottom-color: #437530;
+    border-left-color: #437530;
+}
+
+.btn_green a:hover {
+    border-bottom-color: #82ac39;
+    border-left-color: #82ac39;
+}
+
+.btn_green a:active {
+    border-bottom-color: #437530;
+    border-left-color: #437530;
+}
+
+.submit_red a {
+    background: url(../img/btn_red.png) center no-repeat;
+}
+
+.submit_green a {
+    background: url(../img/btn_green.png) center no-repeat;
+    color: #82ac39;
+}
+
+#footer {
+    text-align: center;
+    padding: 2%;
+}
 
 @media (min-width: 500px) {
     #header img {
@@ -567,6 +662,12 @@ li.social ul li,
 
     #subMenu li {
         padding: 10px;
+    }
+
+    #buttons ul li {
+        float: left;
+        width: 46%;
+        margin: 0 2% 4%;
     }
 
     .breakfast a,
@@ -672,6 +773,11 @@ li.social ul li,
         float: left;
         padding: 0 5% 5% 370px;
     }
+
+    #buttons ul li {
+        float: left;
+        width: 29%;
+    }
 }
 
 @media (min-width: 940px) {
@@ -679,5 +785,6 @@ li.social ul li,
         float: left;
         width: 100%;
     }
+
 
 }
