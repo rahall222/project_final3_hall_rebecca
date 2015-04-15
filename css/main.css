@@ -21,18 +21,19 @@ h1, h2 {
     margin: 0;
     padding: 0;
     font-family: 'Ruda', sans-serif;
-    color: #d4363b;
 }
 
 h1 {
     font-size: 3em;
     font-weight: 900;
     text-align: center;
+    color: #d4363b;
 }
 
 h2 {
     font-size: 2em;
     font-weight: 700;
+    color: #82ac39;
 }
 
 p, ul, ol {
@@ -65,6 +66,10 @@ a:visited {
 img {
     border: 0 none;
     vertical-align: middle;
+}
+
+figure {
+    width: 100%;
 }
 
 .clear {
@@ -198,6 +203,27 @@ li.social ul li,
     outline: none;
 }
 
+/* SPECIALS */
+#specials {
+    margin: 0 auto 20px;
+    padding: 5%;
+}
+
+#specials h2 {
+    margin: 0 auto 20px;
+    padding: 5%;
+    text-align: center;
+}
+
+#specials section {
+    padding: 0 0 0;
+    margin: 2% 0;
+    height: 270px;
+}
+
+#specials figure {
+    height: 100%;
+}
 
 /* ADVERTS */
 
@@ -535,9 +561,20 @@ li.social ul li,
     font-size: 1.3em;
 }
 
+
+/*MAP*/
 #map {
     margin: 0 auto 20px;
     padding: 5%;
+}
+
+.mapborder {
+    border-width: 8px;
+    border-style: solid;
+    border-top-color: #b7d49d;
+    border-right-color: #b7d49d;
+    border-bottom-color: #437530;
+    border-left-color: #437530;
 }
 
 #map-canvas {
@@ -773,6 +810,17 @@ li.social ul li,
         float: left;
         padding: 0 5% 5% 370px;
     }
+
+/*    #specials {
+        float: left;
+        margin: 0 5% 5% 370px;
+        width: 58%;
+        padding: 0 10%;
+    }
+
+    #specials section{
+        overflow: hidden;
+    }*/
 
     #buttons ul li {
         float: left;

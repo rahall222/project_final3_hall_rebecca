@@ -40,7 +40,20 @@ $(document).ready( function() {
 		});
 	}
 
-//BACKSTRETCH
+//BACKSTRETCH SPECIALS
+	$(".sandwich_loyalty").backstretch("img/promo_sandwiches.jpg", {
+		speed: 500
+	});
+
+	$(".hotdog_loyalty").backstretch("img/promo_hotdogs.jpg", {
+		speed: 500
+	});
+
+	$(".community_community").backstretch("img/community_community.png", {
+		speed: 500
+	});
+
+//BACKSTRETCH FOODMENU
 	$(".breakfast1").backstretch("img/breakfast1.jpg", {
 		speed: 500
 	});
@@ -83,7 +96,7 @@ $(document).ready( function() {
 
 
 
-//BACKSTRETCH
+//BACKSTRETCH INDEX
 	$(".chang").backstretch("img/chang.jpg", {
 		speed: 500
 	});
