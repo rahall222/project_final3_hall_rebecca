@@ -3,13 +3,30 @@ $(document).ready( function() {
 // HAMBURGER MENU
 	$(".drawer").drawer();
 
-// FULL PAGE SCROLL
-	$('#fullpage').fullpage({
-		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
-		menu: '#subMenu',
-		sectionsColor: ['whitesmoke', 'whitesmoke', 'whitesmoke', 'whitesmoke', 'whitesmoke'],
-		autoScrolling: false,
-		fitToSection: true
+//ANIMATE SCROLL
+	$('li').click(function() {
+		$("li.active").removeClass("active");
+		$(this).addClass('active');
+	});
+
+	$('.breakfast').on("click", function(){
+		$('body').animatescroll();
+	});
+
+	$('.sandwiches').on("click", function(){
+		$('.section2').animatescroll();
+	});
+
+	$('.hotdogs').on("click", function(){
+		$('.section3').animatescroll();
+	});
+
+	$('.drinks').on("click", function(){
+		$('.section4').animatescroll();
+	});
+
+	$('.dessert').on("click", function(){
+		$('.section5').animatescroll();
 	});
 
 //STICK UP

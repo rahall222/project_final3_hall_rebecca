@@ -261,7 +261,6 @@ li.social ul li,
 }
 
 /*Submenu*/
-
 #subMenu li {
     padding: 6px 10px 3px;
     list-style: none;
@@ -517,10 +516,14 @@ li.social ul li,
     border-left: 15px solid transparent;
 }
 
-
 .foodmenu h2 {
     border-bottom: 2px solid #82ac39;
     margin: 10px 0 0;
+}
+
+.spacer {
+    height: 150px;
+    background: pink;
 }
 
 .foodmenu .inner {
@@ -538,10 +541,10 @@ li.social ul li,
 }
 
 #map-canvas {
-        width: 500px;
-        height: 400px;
-        background-color: #CCC;
-      }
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+  }
 
 
 @media (min-width: 500px) {

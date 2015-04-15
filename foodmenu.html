@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/vendor/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/drawer.css">
-	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/stickup.css">
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -35,15 +34,15 @@
 		</div>
 	</header>
 	<ul id="subMenu" class="navbar-wrapper foodbar">
-		<li data-menuanchor="firstPage" class="active breakfast"><a href="#firstPage"></a></li>
-		<li data-menuanchor="secondPage" class="sandwiches"><a href="#secondPage"></a></li>
-		<li data-menuanchor="thirdPage" class="hotdogs"><a href="#thirdPage"></a></li>
-		<li data-menuanchor="fourthPage" class="drinks"><a href="#fourthPage"></a></li>
-		<li data-menuanchor="fifthPage" class="dessert"><a href="#fifthPage"></a></li>
+		<li class="active breakfast"><a href="#section1"></a></li>
+		<li class="sandwiches"><a href="#section2"></a></li>
+		<li class="hotdogs"><a href="#section3"></a></li>
+		<li class="drinks"><a href="#section4"></a></li>
+		<li class="dessert"><a href="#section5"></a></li>
 	</ul>
 
-	<main id="fullpage" class="foodmenu">
-		<section class="section" data-anchor="firstPage">
+	<main class="foodmenu">
+		<section class="section1">
 			<div class="inner">
 				<h2>Breakfast</h2>
 				<ul class="fooditems sheer">
@@ -91,7 +90,8 @@
 				</aside>
 			</div>
 		</section>
-		<section class="section" data-anchor="secondPage">
+		<section class="section2">
+			<div class="spacer"></div>
 			<div class="inner">
 				<h2>Sandwiches</h2>
 				<ul class="fooditems sheer">
@@ -134,7 +134,8 @@
 				</aside>
 			</div>
 		</section>
-		<section class="section" data-anchor="thirdPage">
+		<section class="section3">
+			<div class="spacer"></div>
 			<div class="inner">
 				<h2>Hotdogs</h2>
 				<ul class="fooditems sheer">
@@ -174,7 +175,8 @@
 				</ul>
 			</div>
 		</section>
-		<section class="section" data-anchor="fourthPage">
+		<section class="section4">
+			<div class="spacer"></div>
 			<div class="inner">
 				<h2>Drinks</h2>
 				<ul class="fooditems sheer">
@@ -216,7 +218,8 @@
 				</aside>
 			</div>
 		</section>
-		<section class="section" data-anchor="fifthPage">
+		<section class="section5">
+			<div class="spacer"></div>
 			<div class="inner">
 				<h2>Dessert</h2>
 				<ul class="fooditems sheer">
@@ -257,7 +260,7 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
 	<script src="http://cdn.rawgit.com/ungki/bootstrap.dropdown/3.3.1/dropdown.min.js"></script>
 	<script src="js/jquery.drawer.min.js"></script>
-	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/animatescroll.min.js"></script>
 	<script src="js/stickUp.min.js"></script>
 	<script src="js/jquery.backstretch.min.js"></script>
 	<script src="js/foodmenu.js"></script>
