@@ -7,4 +7,5 @@ http://stackoverflow.com/questions/5772192/git-how-can-i-reconcile-detached-head
 http://lirancohen.github.io/stickUp/
 http://plugins.compzets.com/animatescroll/
 http://stackoverflow.com/questions/12687085/jquery-remove-class-if-other-element-is-clicked
+https://learn.jquery.com/using-jquery-core/faq/how-do-i-test-whether-an-element-exists/
 -
