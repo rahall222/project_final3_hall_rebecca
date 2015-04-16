@@ -28,6 +28,7 @@ h1 {
     font-weight: 900;
     text-align: center;
     color: #d4363b;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -51,7 +52,7 @@ p, ul, ol {
 }
 
 p {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 ol, ul {
@@ -180,13 +181,7 @@ figure {
 
 #content h2{
     color: #82ac39;
-    margin: 20px;
-}
-
-#content ul {
-    margin: 0 auto;
-    padding: 10px 0 0;
-    text-align: center;
+    margin: 0 0 20px;
 }
 
 #content li {
@@ -195,8 +190,6 @@ figure {
 
 #content > ul > li {
     padding: 0 0 20px;
-    /*background: #fff;*/
-
 }
 
 .list li,
@@ -536,7 +529,12 @@ li.social ul li,
     display: block;
 }
 
-.foodinfo li {
+.hours {
+
+}
+
+.foodinfo li,
+.hours li {
     font-size: .89em;
     padding: 2px 5px;
     list-style: none;
@@ -554,18 +552,26 @@ li.social ul li,
     background-color: #eee;
 }
 
-.foodinfo li span {
+.foodinfo li span,
+.hours li span {
     text-align: center;
     display: inline-block;
-    width: 25%;
-    color: #ab2d31;
-    background-color: #ffbdbf;
-    /*border-radius: 10px;*/
     position: absolute;
     right: 0px;
+    color: #ab2d31;
+    background-color: #ffbdbf;
 }
 
-.foodinfo li span::before {
+.foodinfo li span {
+    width: 25%;
+}
+
+.hours li span {
+    width: 50%;
+}
+
+.foodinfo li span::before,
+.hours li span::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -616,15 +622,14 @@ li.social ul li,
     padding: 10px 20px 40px;
 }
 
-#content.contact h2 {
-    font-size: 1.3em;
-}
-
-
 /*MAP*/
 #map {
     margin: 0 auto 20px;
     padding: 5%;
+}
+
+#map aside {
+    margin-top: 40px;
 }
 
 .mapborder {
@@ -731,6 +736,12 @@ li.social ul li,
 .submit_green a {
     background: url(../img/btn_green.png) center no-repeat;
     color: #82ac39;
+}
+
+#content.contact h2,
+.contact h2 {
+    font-size: 1.3em;
+    text-align: left;
 }
 
 #footer {
@@ -872,28 +883,12 @@ li.social ul li,
         padding: 10px 10px 40px;
     }
 
-    #content.contact {
+/*    #content.contact {
         width: 300px;
         position: absolute;
         top: 321px;
         padding-left: 35px;
-        background: rgba(255,255,255, 0.5);
-        /*background: #fff;*/
-    }
-
-    #content.contact ul {
-        padding: 8px 0 10px;
-        width: 200px;
-    }
-
-    #map {
-        float: left;
-        padding: 0 5% 5% 340px;
-    }
-
-    #map {
-        width: 100%;
-    }
+    }*/
 }
 
 @media (min-width: 750px) {
@@ -915,9 +910,8 @@ li.social ul li,
         margin: 20px 0;
     }
 
-    #content ul {
-        padding: 8px 0 10px;
-        width: 200px;
+    #content > ul {
+        padding-right: 40px;
     }
 
     #adverts {
@@ -961,6 +955,15 @@ li.social ul li,
     #buttons ul li {
         float: left;
         width: 29%;
+    }
+
+    #map {
+        float: left;
+        padding: 0 5% 5% 340px;
+    }
+
+    #map {
+        width: 100%;
     }
 }
 
