@@ -888,7 +888,7 @@ li.social ul li,
         width: calc(100%/2);
         float: left;
         padding: 0;
-        margin: 5px 0;*/
+        margin: 0px 0;
     }
 
     ul.fooditems > li:last-child {
