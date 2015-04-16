@@ -50,6 +50,10 @@ p, ul, ol {
     line-height: 180%;
 }
 
+p {
+    margin-bottom: 40px;
+}
+
 ol, ul {
     padding: 0;
 }
@@ -243,14 +247,17 @@ li.social ul li,
 }
 
 #adverts figure {
-    height: 270px;
+    height: 400px;
 }
 
 #adverts p {
     background: rgba(255,255,255, 0.5);
+    background: #fff;
     margin: 20px;
     border-radius: 20px;
     text-align: center;
+    padding: 10px 20px;
+    font-size: .87em;
 }
 
 /* TEXTURES */
@@ -272,10 +279,6 @@ li.social ul li,
     height: 600px;
 }
 
-.textures p {
-    padding: 10px 20px;
-}
-
 .redtable {
     background: url(../img/tablecloth_red.png) repeat;
     border-top: 10px solid rgba(255, 189, 191, .5);
@@ -290,16 +293,29 @@ li.social ul li,
 
 .woodtable {
     background: url(../img/wood.jpg) repeat;
+/*    border-top: 10px solid rgba(255, 255, 255, .6);
+    border-bottom: 10px solid rgba(255, 255, 255, .6);*/
 }
 
 .textures .redtable {
     width: 58%;
 }
 
-.textures .woodtable {
-    width: 98%;
-    padding-bottom: 0;
+.textures .awards {
+    width: 100%;
     height: auto;
+    padding: 60px 0;
+    background: url(../img/awards2.png) center no-repeat;
+    height: 600px;
+}
+
+.textures .awards img {
+    display: none;
+}
+
+.awards h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /*Submenu*/
@@ -756,6 +772,25 @@ li.social ul li,
         float: left;
         width: 46%;
         margin: 0 2% 4%;
+    }
+
+    .textures li {
+        height: 520px;
+    }
+
+    .textures .awards {
+        border-width: 8px;
+        border-style: solid;
+        border-top-color: #b7d49d;
+        border-right-color: transparent;
+        border-bottom-color: #437530;
+        border-left-color: transparent;
+        background: none;
+        height: auto;
+    }
+
+    .textures .awards img {
+        display: inline;
     }
 
     .breakfast a,
