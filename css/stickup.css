@@ -6,11 +6,6 @@
 xmp { counter-increment: listing; }
 .code xmp:before { content: counter(listing) ". "; color: gray; }
 
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-}
-
 #features {
   max-width:none;
 }
