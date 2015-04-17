@@ -248,7 +248,7 @@ li.social ul li,
 
 /* ADVERTS */
 #adverts {
-    margin: 0 auto 20px;
+    margin: 10px auto 20px;
     padding: 5%;
 }
 
@@ -280,8 +280,8 @@ li.social ul li,
     float: left;
     list-style-type: none;
     margin: 1%;
-    width: 38%;
-    height: 600px;
+    width: 100%;
+    height: auto;
 }
 
 .redtable {
@@ -302,16 +302,12 @@ li.social ul li,
     border-bottom: 10px solid rgba(255, 255, 255, .6);*/
 }
 
-#adverts .redtable {
-    width: 58%;
-}
-
 #adverts .awards {
     width: 100%;
     height: auto;
     padding: 60px 0;
     background: url(../img/awards2.png) center no-repeat;
-    height: 600px;
+    height: 500px;
 }
 
 #adverts .awards img {
@@ -766,14 +762,16 @@ li.social ul li,
         padding: 3px 3%;
     }
 
-    #buttons ul li {
-        float: left;
-        width: 46%;
-        margin: 0 2% 4%;
+    #adverts li {
+        width: 38%;
+    }
+
+    #adverts .redtable {
+        width: 58%;
     }
 
     #adverts li {
-        height: 520px;
+        height: 530px;
     }
 
     #adverts .awards {
@@ -789,6 +787,12 @@ li.social ul li,
 
     #adverts .awards img {
         display: inline;
+    }
+
+    #buttons ul li {
+        float: left;
+        width: 46%;
+        margin: 0 2% 4%;
     }
 
     .breakfast a,
@@ -903,8 +907,16 @@ li.social ul li,
     }
 
     #adverts {
-        float: left;
-        padding: 0 5% 5% 370px;
+        padding: 0 5% 5% 450px;
+    }
+
+    #adverts li {
+        width: 100%;
+        height: auto;
+    }
+
+    #adverts .redtable {
+        width: 100%;
     }
 
     #subMenu li {
@@ -961,8 +973,14 @@ li.social ul li,
 
 @media (min-width: 940px) {
     #adverts {
-        float: left;
-        width: 100%;
+    }
+
+    #adverts li {
+        width: 48%;
+    }
+
+    #adverts .redtable {
+        width: 48%;
     }
 
     ul.fooditems > li {
