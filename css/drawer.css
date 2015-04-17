@@ -123,10 +123,15 @@ body.drawer-navbar.drawer-fixed {
     display: block !important;
 }
 
+.drawer-header {
+    background-color: #d4363b;
+}
+
 .drawer-hamburger {
     border: 0;
     background: 0;
-    position: fixed;
+    position: relative;
+    float: right;
     display: block;
     top: 0;
     padding: 15px;

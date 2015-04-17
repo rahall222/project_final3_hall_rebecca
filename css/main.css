@@ -97,7 +97,6 @@ figure {
     margin: 0 auto;
     padding: 8px 0 0;
     background: url(../img/tablecloth_red.png) repeat;
-    border-bottom: 8px solid #d4363b;
     position: relative;
     z-index: 70;
 }
@@ -777,6 +776,10 @@ li.social ul li,
 
     .spacer {
         height: 150px;
+    }
+
+    #header {
+        border-bottom: 8px solid #d4363b;
     }
 
     #header img {
