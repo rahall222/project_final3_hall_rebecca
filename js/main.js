@@ -41,68 +41,72 @@ $(document).ready( function() {
 	}
 
 //BACKSTRETCH SPECIALS
-	$(".sandwich_loyalty").backstretch("img/promo_sandwiches.jpg", {
-		speed: 500
-	});
+	if ( $( "#specials" ).length ) {
+		$(".sandwich_loyalty").backstretch("img/promo_sandwiches.jpg", {
+			speed: 500
+		});
 
-	$(".hotdog_loyalty").backstretch("img/promo_hotdogs.jpg", {
-		speed: 500
-	});
+		$(".hotdog_loyalty").backstretch("img/promo_hotdogs.jpg", {
+			speed: 500
+		});
 
-	$(".community_community").backstretch("img/community_community.png", {
-		speed: 500
-	});
+		$(".community_community").backstretch("img/community_community.png", {
+			speed: 500
+		});
+	}
 
 //BACKSTRETCH FOODMENU
-	$(".breakfast1").backstretch("img/breakfast1.jpg", {
-		speed: 500
-	});
+	if ( $( ".foodmenu" ).length ) {
+		$(".breakfast1").backstretch("img/breakfast1.jpg", {
+			speed: 500
+		});
 
-	$(".breakfast2").backstretch("img/breakfast2.jpg", {
-		speed: 500
-	});
+		$(".breakfast2").backstretch("img/breakfast2.jpg", {
+			speed: 500
+		});
 
-	$(".breakfast3").backstretch("img/breakfast3.jpg", {
-		speed: 500
-	});
+		$(".breakfast3").backstretch("img/breakfast3.jpg", {
+			speed: 500
+		});
 
-	$(".sandwich1").backstretch("img/sandwich1.jpg", {
-		speed: 500
-	});
+		$(".sandwich1").backstretch("img/sandwich1.jpg", {
+			speed: 500
+		});
 
-	$(".sandwich3").backstretch("img/sandwich3.jpg", {
-		speed: 500
-	});
+		$(".sandwich3").backstretch("img/sandwich3.jpg", {
+			speed: 500
+		});
 
-	$(".hotdog1").backstretch("img/hotdog1.jpg", {
-		speed: 500
-	});
+		$(".hotdog1").backstretch("img/hotdog1.jpg", {
+			speed: 500
+		});
 
-	$(".dessert1").backstretch("img/dessert1.jpg", {
-		speed: 500
-	});
+		$(".dessert1").backstretch("img/dessert1.jpg", {
+			speed: 500
+		});
 
-	$(".dessert2").backstretch("img/dessert2.jpg", {
-		speed: 500
-	});
+		$(".dessert2").backstretch("img/dessert2.jpg", {
+			speed: 500
+		});
 
-	$(".dessert3").backstretch("img/dessert3.jpg", {
-		speed: 500
-	});
+		$(".dessert3").backstretch("img/dessert3.jpg", {
+			speed: 500
+		});
 
-	$(".drinks1").backstretch("img/drinks1.jpg", {
-		speed: 500
-	});
-
-
+		$(".drinks1").backstretch("img/drinks1.jpg", {
+			speed: 500
+		});
+	}
 
 //BACKSTRETCH INDEX
-	$(".chang").backstretch("img/chang.jpg", {
-		speed: 500
-	});
+	if ( $( "#adverts" ).length ) {
+		$(".chang").backstretch("img/chang.jpg", {
+			speed: 500
+		});
 
-	$(".community").backstretch("img/community.jpg", {
-		speed: 500
-	});
+		$(".community").backstretch("img/community.jpg", {
+			speed: 500
+		});
+	}
 
 });
