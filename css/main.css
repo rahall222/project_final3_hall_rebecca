@@ -211,6 +211,7 @@ li.social ul li,
 #specials {
     margin: 0 auto 20px;
     padding: 5%;
+    text-align: center;
 }
 
 #specials h2 {
@@ -218,9 +219,9 @@ li.social ul li,
     text-align: center;
 }
 
-#specials section {
+#specials article {
     padding: 0;
-    margin: 2% 0;
+    margin: 0 0 2%;
     height: 270px;
     position: relative;
 }
@@ -697,7 +698,10 @@ li.social ul li,
 #content.contact h2,
 .contact h2 {
     font-size: 1.3em;
-    text-align: left;
+}
+
+.address {
+    text-align: center;
 }
 
 #map {
@@ -876,6 +880,15 @@ li.social ul li,
 
     #specials div {
         width: calc(100%/2);
+    }
+
+    #content.contact h2,
+    .contact h2 {
+        text-align: left;
+    }
+
+    .contact .address{
+        text-align: left;
     }
 }
 
