@@ -17,7 +17,7 @@ body {
     color: #253948;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
     font-family: 'Ruda', sans-serif;
@@ -41,6 +41,11 @@ h3 {
     font-size: 1.2em;
     font-weight: 700;
     color: #82ac39;
+}
+
+h4 {
+    color: #ffffff;
+    font-weight: normal;
 }
 
 p, ul, ol {
@@ -216,21 +221,77 @@ li.social ul li,
 }
 
 /* SPECIALS */
+pre {
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    display: inline-block;
+    padding: 0 5%;
+}
+
 #specials {
     margin: 0 auto 20px;
-    padding: 5%;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#specials span {
+    color: #82ac39;
+    display: inline-block;
+    margin: 5px auto;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #ffffff;
+    position: relative;
+    top: -20px;
+}
+
+#specials span:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #ffffff;
+}
+
+#specials span p {
+    text-align: center;
+    color: #82ac39;
+    position: absolute;
+    top: 8px;
+    right: -4px;
+    z-index: 20;
+}
+
+#specials h2,
+#specials h3 {
+    margin: 0 auto 20px;
     text-align: center;
 }
 
 #specials h2 {
+    color: #d4363b;
+}
+
+#specials .contact h2 {
+    color: #82ac39;
+}
+
+#specials h4 {
+    font-size: 2em;
     margin: 0 auto 20px;
     text-align: center;
+    color: #ffffff;
+    padding-top: 5%;
 }
 
 #specials article {
     padding: 0;
-    margin: 0 0 2%;
-    height: 270px;
+    margin: 0 0 5%;
+    height: 340px;
     position: relative;
 }
 
@@ -332,8 +393,8 @@ li.social ul li,
 #subMenu {
     z-index: 65;
     background: #ffffff;
-    -webkit-box-shadow: -1px 1px 0px rgba(0,0,0,.2);
-    box-shadow: -1px 1px 0px rgba(0,0,0,.2);
+    -webkit-box-shadow: -1px 1px 2px rgba(0,0,0,.2);
+    box-shadow: -1px 1px 2px rgba(0,0,0,.2);
     padding: 0;
     margin: 0;
     text-align: center;
@@ -501,7 +562,7 @@ li.social ul li,
 
 .foodmenu {
     background: #f9f9f9;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 
 .foodmenu h2 {
@@ -596,8 +657,7 @@ li.social ul li,
 
 .toppinginfo {
     padding: 10px 20px 40px;
-    overflow: hidden;
-    text-align: center;
+    text-align: left;
 }
 
 .toppinginfo li {
@@ -741,8 +801,19 @@ li.social ul li,
     font-size: 1.3em;
 }
 
-.address {
+aside.contact {
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.address,
+.telephone {
     text-align: center;
+}
+
+.telephone a {
+    color: #253948;
+    font-family: 'Ruda', sans-serif;
 }
 
 #map {
@@ -934,7 +1005,7 @@ li.social ul li,
 
     .toppinginfo {
         padding: 10px 20px 30px;
-        width: 300px;
+        /*width: 300px;*/ /*keeping in case change back to centered text*/
         margin: 0 auto;
     }
 
@@ -942,12 +1013,18 @@ li.social ul li,
         width: calc(100%/2);
     }
 
+    #specials article {
+        margin: 0 0 2%;
+        height: 400px;
+    }
+
     #content.contact h2,
     .contact h2 {
         text-align: left;
     }
 
-    .contact .address{
+    .contact .address,
+    .contact .telephone {
         text-align: left;
     }
 }
@@ -1022,23 +1099,11 @@ li.social ul li,
 
     .toppinginfo {
         padding: 10px 10px 40px 20px;
-        height: 450px;
         width: auto;
     }
 
-/*    #specials {
-        float: left;
-        margin: 0 5% 5% 370px;
-        width: 58%;
-        padding: 0 10%;
-    }
-
-    #specials section{
-        overflow: hidden;
-    }*/
-
-    #specials div {
-        width: calc(100%/3);
+    #specials article {
+        height: 340px;
     }
 
     #map {
@@ -1090,6 +1155,10 @@ li.social ul li,
     .toppinginfo {
         width: auto;
         margin: 0;
+    }
+
+    #specials div {
+        width: calc(100%/3);
     }
 }
 
