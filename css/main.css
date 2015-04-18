@@ -234,7 +234,7 @@ pre {
     text-align: center;
 }
 
-#specials span {
+#specials .diamond {
     color: #82ac39;
     display: inline-block;
     margin: 5px auto;
@@ -246,7 +246,7 @@ pre {
     top: -20px;
 }
 
-#specials span:after {
+#specials .diamond:after {
     content: '';
     position: absolute;
     left: -20px;
@@ -257,7 +257,7 @@ pre {
     border-top-color: #ffffff;
 }
 
-#specials span p {
+#specials span {
     text-align: center;
     color: #82ac39;
     position: absolute;
@@ -299,7 +299,7 @@ pre {
     height: 100%;
 }
 
-#specials div {
+#specials .block {
     width: 100%;
     background: rgba(255,255,255, 0.7);
     background: #82ac39;
@@ -831,8 +831,8 @@ aside.contact {
 }
 
 #map-canvas {
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    height: 450px;
     background-color: #CCC;
 }
 
@@ -1009,7 +1009,7 @@ aside.contact {
         margin: 0 auto;
     }
 
-    #specials div {
+    #specials .block {
         width: calc(100%/2);
     }
 
@@ -1157,7 +1157,7 @@ aside.contact {
         margin: 0;
     }
 
-    #specials div {
+    #specials .block {
         width: calc(100%/3);
     }
 }
