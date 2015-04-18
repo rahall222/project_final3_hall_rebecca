@@ -42,6 +42,39 @@
 			<p>Shirley's Sandwiches is the only student run cafe / restaurant on campus! This cafe'teria strives to provide Greendale students with the very best sandwiches, made with fresh ingredients. We only use the finest ingredients for our food. Checkout our <a href="foodmenu.html">menu</a> and our <a href="specials.html">specials</a>.</p>
 			<h2>Student finances making you go hungry?</h2>
 			<p>Join our Community community and become a loyalty member for fantastic discounts.</p>
+			<form action="#" method="post" name="myForm" id="myForm" autocomplete="on">
+			<p>
+				<label for="firstName">First name:</label>
+				<input type="text" name="firstName" id="firstName" required/>
+			</p>
+			<p>
+				<label for="lastName">Last name:</label>
+				<input type="text" name="lastName" id="lastName" required/>
+			</p>
+			<p>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" autocomplete="off" required/>
+			</p>
+			<p class="origin">
+				<label for="origin">How did you discover our cafe?</label>
+				<select name="origin" id="origin">
+					<option value="web">Website</option>
+					<option value="friend">Friend</option>
+					<option value="publication">School Publication</option>
+					<option value="other">Other</option>
+				</select>
+			</p>
+			<p class="cards">
+				<label for="card">No. of membership cards:</label>
+				<select name="card" id="card">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</p>
+			<input type="submit" name="submit" title="submit" class="submit_green" value="Join now!" />
+			<div class="clear"></div>
+		</form>
 		</article>
 		<article id="adverts">
 			<h2 class="hidden">Shirley's Adverts</h2>

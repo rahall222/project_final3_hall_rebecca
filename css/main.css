@@ -836,6 +836,79 @@ aside.contact {
     background-color: #ccc;
 }
 
+/* FORM */
+form {
+    margin: 0 auto;
+    padding: 0 0 30px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    background-color: #b7d49d;
+    color: #253948;
+    border: none;
+    width: 100%;
+    padding: 2% 3%;
+    letter-spacing: 1px;
+    font-family: 'Coustard', serif;
+    position: relative;
+}
+
+select {
+    padding: 4% 3%;
+    height: 30px;
+}
+
+.cards,
+.origin {
+    text-align: center;
+}
+
+.cards {
+    width: 45%;
+    float: right;
+}
+
+.origin {
+    width: 50%;
+    float: left;
+}
+
+label {
+    color: #82ac39;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Ruda', serif;
+}
+
+input[type="submit"] {
+    font-family: 'Coustard', serif;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    -o-transition: .1s;
+    -ms-transition: .1s;
+    -moz-transition: .1s;
+    -webkit-transition: .1s;
+    transition: .1s;
+    border-width: 8px;
+    border-style: solid;
+    border-top-color: #b7d49d;
+    border-right-color: transparent;
+    border-bottom-color: #437530;
+    border-left-color: transparent;
+    background: none;
+}
+
+input[type="submit"]:hover {
+    color: #82ac39;
+}
+
+/* FOOTER */
 .footer {
     padding: 40px 5%;
     background: #253948;
@@ -905,9 +978,9 @@ aside.contact {
         width: auto;
         border-width: 8px;
         border-style: solid;
-        border-top-color: #b7d49d;
+        border-top-color: #ffbdbf;
         border-right-color: transparent;
-        border-bottom-color: #437530;
+        border-bottom-color: #ab2d31;
         border-left-color: transparent;
         background: none;
         height: auto;
@@ -1058,6 +1131,7 @@ aside.contact {
 
     #adverts {
         padding: 0 5% 5% 450px;
+        margin-bottom: 50px;
     }
 
     #adverts li {
@@ -1132,6 +1206,10 @@ aside.contact {
 }
 
 @media (min-width: 940px) {
+    #adverts {
+        margin-bottom: 150px;
+    }
+
     #adverts li {
         width: 48%;
     }
