@@ -38,12 +38,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: 700;
-    color: rgba(255,255,255, 0.7);
-    color: #fff;
-    margin: 20px;
-    text-align: center;
+    color: #82ac39;
 }
 
 p, ul, ol {
@@ -54,6 +51,7 @@ p, ul, ol {
 
 p {
     margin-bottom: 20px;
+    font-size: .9em;
 }
 
 ol, ul {
@@ -80,6 +78,10 @@ a:visited {
 img {
     border: 0 none;
     vertical-align: middle;
+}
+
+.hidden {
+    display: none;
 }
 
 .clear {
@@ -138,6 +140,7 @@ img {
     line-height: 35px;
     text-decoration: none;
     text-align: center;
+    color: #ffbdbf;
     text-shadow: -1px 1px 0px rgba(0,0,0,.2);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -177,7 +180,6 @@ img {
 }
 
 #content h2{
-    color: #82ac39;
     margin: 0 0 20px;
 }
 
@@ -198,13 +200,18 @@ li.list ul li {
 li.social ul,
 ul.social {
     margin: 20px 0 0;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid #82ac39;
+}
+
+.footer .social {
+    border-bottom: none;
+    text-align: center;
+    margin-top: 5px;
 }
 
 li.social ul li,
 .social li {
     display: inline-block;
-    outline: none;
 }
 
 /* SPECIALS */
@@ -243,7 +250,6 @@ li.social ul li,
 
 #specials aside h2,
 #map aside h2 {
-    text-align: left;
     margin-top: 40px;
 }
 
@@ -260,6 +266,8 @@ li.social ul li,
 #adverts p {
     background: rgba(255,255,255, 0.5);
     background: #fff;
+    -webkit-box-shadow: -1px 1px 2px rgba(0,0,0,.2);
+    box-shadow: -1px 1px 2px rgba(0,0,0,.2);
     margin: 20px;
     border-radius: 20px;
     text-align: center;
@@ -280,7 +288,7 @@ li.social ul li,
 #adverts li {
     float: left;
     list-style-type: none;
-    margin: 1%;
+    margin: 2% 1%;
     width: 100%;
     height: auto;
 }
@@ -308,7 +316,7 @@ li.social ul li,
     height: auto;
     padding: 60px 0;
     background: url(../img/awards2.png) center no-repeat;
-    height: 500px;
+    height: 450px;
 }
 
 #adverts .awards img {
@@ -324,8 +332,8 @@ li.social ul li,
 #subMenu {
     z-index: 65;
     background: #ffffff;
+    -webkit-box-shadow: -1px 1px 0px rgba(0,0,0,.2);
     box-shadow: -1px 1px 0px rgba(0,0,0,.2);
-    width: 100%;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -335,7 +343,7 @@ li.social ul li,
 
 #subMenu li {
     padding: 10px 5px;
-    margin: 0px;
+    width: calc(100%/6);
     list-style: none;
     display: inline-block;
 }
@@ -344,6 +352,7 @@ li.social ul li,
     text-decoration: none;
     display: block;
     outline: none;
+    margin: 0 center;
 }
 
 /* COLORS */
@@ -388,15 +397,16 @@ li.social ul li,
 }
 
 /* SOCIAL */
-.facebook a,
-.twitter a,
-.youtube a,
-.email a {
+.social a {
     background-image: url(../img/social_sprite.png) ;
     background-repeat: no-repeat;
-    width: 45px;
-    height: 45px;
+    width: 53px;
+    height: 53px;
     display: block;
+}
+
+.footer .social a {
+    background-image: url(../img/social_sprite2.png) ;
 }
 
 .facebook a {
@@ -404,31 +414,31 @@ li.social ul li,
 }
 
 .facebook a:hover {
-    background-position: -49px 0px;
+    background-position: -55px 0px;
 }
 
 .twitter a {
-    background-position: 0px -49px;
+    background-position: 0px -55px;
 }
 
 .twitter a:hover {
-    background-position: -49px -49px;
+    background-position: -55px -55px;
 }
 
 .youtube a {
-    background-position: 0px -98px;
+    background-position: 0px -110px;
 }
 
 .youtube a:hover {
-    background-position: -49px -98px;
+    background-position: -55px -110px;
 }
 
 .email a {
-    background-position: 0px -147px;
+    background-position: 0px -165px;
 }
 
 .email a:hover {
-    background-position: -49px -147px;
+    background-position: -55px -165px;
 }
 
 /* FOODMENU */
@@ -441,6 +451,7 @@ li.social ul li,
     height: 40px;
     background-image: url(../img/icons_small.png) ;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .breakfast a {
@@ -490,6 +501,7 @@ li.social ul li,
 
 .foodmenu {
     background: #f9f9f9;
+    padding-bottom: 50px;
 }
 
 .foodmenu h2 {
@@ -497,6 +509,8 @@ li.social ul li,
     padding-left: 10px;
     padding-top: 30px;
     margin: 0;
+    font-size: 2em;
+    color: #d4363b;
 }
 
 .spacer {
@@ -504,12 +518,12 @@ li.social ul li,
 }
 
 .foodmenu .inner {
-    max-width: 1000px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
 .inner aside {
-    padding: 10px 20px 0px;
+    padding: 0 20px 0;
 }
 
 .fooditems {
@@ -534,7 +548,7 @@ li.social ul li,
 
 .foodinfo li,
 .hours li {
-    font-size: .89em;
+    font-size: .87em;
     padding: 2px 5px;
     list-style: none;
     display: block;
@@ -542,9 +556,9 @@ li.social ul li,
 }
 
 .foodinfo li:first-child {
-    font-size: 1em;
-    color: #ab2d31;
-    padding: 0 7px;
+    font-size: 1.1em;
+    /*color: #ab2d31;*/
+    padding-left: 5px;
 }
 
 .foodinfo li:nth-child(2n+3) {
@@ -559,6 +573,7 @@ li.social ul li,
     right: 0px;
     color: #ab2d31;
     background-color: #ffbdbf;
+    font-family: 'Ruda', sans-serif;
 }
 
 .foodinfo li span {
@@ -581,8 +596,8 @@ li.social ul li,
 
 .toppinginfo {
     padding: 10px 20px 40px;
-    height: 270px;
     overflow: hidden;
+    text-align: center;
 }
 
 .toppinginfo li {
@@ -603,17 +618,43 @@ li.social ul li,
     border-bottom: 1px solid #dbdbdb;
 }
 
+.share_this {
+    background: #82ac39;
+    font-family: 'Ruda', sans-serif;
+    color: #ffffff;
+    height: 26px;
+    vertical-align: bottom;
+    position: relative;
+    margin-right: 20px;
+    line-height: auto;
+    width: 30%;
+    text-align: center;
+    padding: 5px 0 30px 5px;
+}
+
+.share_this::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -35px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-left: 35px solid #82ac39;
+}
+
 /* BUTTONS */
 #buttons {
     background: #253948;
-    padding: 50px;
+    padding: 50px 5% 20px;
 }
 
 #buttons ul {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-    min-height: 200px;
+    /*min-height: 200px;*/
 }
 
 #buttons ul li {
@@ -724,21 +765,32 @@ li.social ul li,
     background-color: #CCC;
 }
 
-#footer {
+.footer {
+    padding: 40px 5%;
+    background: #253948;
+    color: rgba(255,255,255, 0.5);
+}
+
+.footer .inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.footer h2 {
+    padding: 2% 0 1%;
+    color: #ffffff;
+    text-shadow: -1px 1px 0px rgba(0,0,0,.2);
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.footer section {
     text-align: center;
-    padding: 2%;
-    background: #f9f9f9;
+    margin-bottom: 40px;
 }
 
 @media (min-width: 500px) {
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 1.8em;
-    }
-
     .spacer {
         height: 130px;
     }
@@ -807,6 +859,7 @@ li.social ul li,
         width: 80px;
         height: 80px;
         background-image: url(../img/icons.png) ;
+        margin: 0 auto;
     }
 
     .breakfast a {
@@ -855,7 +908,7 @@ li.social ul li,
     }
 
     .inner aside {
-        padding: 10px 10px 0px;
+        padding: 0 10px 0;
     }
 
     ul.fooditems > li {
@@ -875,7 +928,13 @@ li.social ul li,
     }
 
     .foodinfo {
-        padding: 10px 10px 40px;
+        padding: 10px 10px 30px;
+    }
+
+    .toppinginfo {
+        padding: 10px 20px 30px;
+        width: 300px;
+        margin: 0 auto;
     }
 
     #specials div {
@@ -934,6 +993,7 @@ li.social ul li,
 
     #subMenu li {
         padding: 10px;
+        width: auto;
     }
 
     #buttons ul li {
@@ -944,6 +1004,10 @@ li.social ul li,
     .section3 ul.fooditems > li:first-child,
     .section4 ul.fooditems > li:first-child {
         width: calc(100%/1.5);
+    }
+
+    .section4 ul.fooditems > li:first-child {
+        padding-bottom: 20px;
     }
 
     .section3 ul.fooditems > li:last-child,
@@ -957,6 +1021,8 @@ li.social ul li,
 
     .toppinginfo {
         padding: 10px 10px 40px 20px;
+        height: 450px;
+        width: auto;
     }
 
 /*    #specials {
@@ -982,6 +1048,21 @@ li.social ul li,
     #map {
         width: 100%;
     }
+
+    .footer section {
+        float: left;
+        width: calc(100%/3);
+    }
+
+    .footer section.copyright {
+        float: right;
+    }
+
+    .footer section.sharing {
+        clear: both;
+        float: none;
+        width: auto;
+    }
 }
 
 @media (min-width: 940px) {
@@ -1005,7 +1086,12 @@ li.social ul li,
     }
 
     .foodinfo {
-        padding: 10px 5px 40px;
+        padding: 10px 5px 20px;
+    }
+
+    .toppinginfo {
+        width: auto;
+        margin: 0;
     }
 }
 
@@ -1016,5 +1102,9 @@ li.social ul li,
 
     .toppinginfo {
         padding-right: 0;
+    }
+
+    .inner aside {
+        padding: 0;
     }
 }
