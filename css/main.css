@@ -61,6 +61,7 @@ ol, ul {
 a {
     color: #82ac39;
     text-decoration: none;
+    outline: none;
 }
 
 a:hover {
@@ -312,9 +313,8 @@ li.social ul li,
 }
 
 #adverts .awards {
-    width: 100%;
     height: auto;
-    padding: 60px 0;
+    padding: 60px 5%;
     background: url(../img/awards2.png) center no-repeat;
     height: 450px;
 }
@@ -831,6 +831,7 @@ li.social ul li,
     }
 
     #adverts .awards {
+        width: auto;
         border-width: 8px;
         border-style: solid;
         border-top-color: #b7d49d;
@@ -1066,9 +1067,6 @@ li.social ul li,
 }
 
 @media (min-width: 940px) {
-    #adverts {
-    }
-
     #adverts li {
         width: 48%;
     }

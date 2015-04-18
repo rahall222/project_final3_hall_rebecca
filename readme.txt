@@ -11,4 +11,5 @@ http://plugins.compzets.com/animatescroll/
 http://srobbin.com/jquery-plugins/backstretch/
 http://stackoverflow.com/questions/12687085/jquery-remove-class-if-other-element-is-clicked
 https://learn.jquery.com/using-jquery-core/faq/how-do-i-test-whether-an-element-exists/
+https://css-tricks.com/snippets/css/css-triangle/
 -
